@@ -31,7 +31,7 @@ def get_detail_data(soup):
     # rating
     try:
         rating = soup.find('div', role='img').get('aria-label')
-        rating = rating.strip().split(' ')[1]
+        rating = rating.strip().split(' ')[0]
     except:
         rating = ''
 
